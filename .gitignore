@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Selenium WebDriver binaries (если скачиваешь вручную)
+chromedriver
+geckodriver
+*.exe  # (осторожно: убедись, что не нужны другие .exe)
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Environment variables
+.env
+.env.local
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Secrets and credentials (если появятся)
+secrets.json
+credentials.json
