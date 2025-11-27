@@ -50,7 +50,6 @@ Thumbs.db
 # Selenium (если используешь локальные драйверы)
 chromedriver
 geckodriver
-*.exe  # ← только если точно не нужен в репозитории
 
 # Secrets & config
 .env
