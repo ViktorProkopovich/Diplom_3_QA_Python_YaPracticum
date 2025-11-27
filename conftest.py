@@ -4,6 +4,7 @@ import requests
 from faker import Faker
 from url import Url
 from pages.base_page import BasePage
+from locators.base_locators import BaseLocators
 
 
 def pytest_addoption(parser):
@@ -45,4 +46,5 @@ def logged_in_browser(browser, created_user):
     browser.get(Url.url_page)
     base_page = BasePage(browser)
     base_page.login(created_user["email"], created_user["password"])
-    yield browser
+    base_page.wait_for_element_visible(BaseLocators.BUN)
+    return browser
